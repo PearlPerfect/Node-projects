@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%-include("./partials/head.ejs") %>
+<body>
+<%-include("./partials/nav.ejs") %>
+    <form action="" method="POST" id="input-form" class="form" enctype="multipart/form-data">
+        <label for="title" class="label">New Post:</label>
+        <input type="text" name="title" placeholder="What is your Post about"   value=""  class="inputs" >
+
+        <label for="Image" class="label"> Upload Image:</label>
+        <input type="file" name="uploadPicture"  class="inputs">
+
+        <label for="post" class="label"> Post:</label>
+        <textarea name="body" id="PostContent" cols="30" rows="10" class="inputs" placeholder="type your post here.."></textarea>
+
+        <button type="submit" class="btn">SUBMIT</button>
+    </form>
+
+</body>
+</html>

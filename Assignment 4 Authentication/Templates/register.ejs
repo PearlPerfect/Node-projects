@@ -1,0 +1,60 @@
+<%-include('./partials/header.ejs') %>
+<body>
+
+
+<main>
+    <section class="container">
+       
+        <form action="/register" class="form" method="post">
+            <h1>Registration Form</h1>
+            <em>To continue fill the form below</em>
+            <% if (message.error){ %>
+              <div class="flashMsg">
+               <p> <%= message.error %> </p>
+              </div>
+          <% }  else if (message.success){ %>
+            <div class="flashSuc">
+             <p> <%= message.success %> </p>
+            </div>
+        <% } %>
+  
+          <div class="input-box">
+            <label>Full Name</label>
+            <p class="errors"><%= err %></p>
+            <input type="text" placeholder="Enter full name" name = "name" value = '<%= data?.name %>' />
+          </div>
+          <div class="input-box">
+            <label>Email Address</label>
+             <p class="errors"><%= err %></p>
+            <input type="email" placeholder="Enter email address" name = "email" value = '<%= data?.email %>' />
+          </div>
+          <div class="column">
+            <div class="input-box">
+              <label>Phone Number</label>
+               <p class="errors"><%= err %></p>
+              <input type="tel" placeholder="Enter phone number" name = "phone" value = '<%= data?.phone %>'  class="flexed"/>
+            </div>
+            <div class="input-box">
+              <label>Birth Date</label>
+               <p class="errors"><%= err %></p>
+              <input type="date" placeholder="Enter birth date" name = "dob" value = '<%= data?.dob %>'  class="flexed"/>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label>password</label>
+             <p class="errors"><%= err %></p>
+            <input type="password" placeholder="Enter password" name = "password" value = '<%= data?.password %>'  />
+          </div>
+          <div class="input-box">
+            <label>Confirm password</label>
+             <p class="errors"><%= err %></p>
+            <input type="password" placeholder="Confirm password" name = "cpassword" value = '<%= data?.cpassword %>'  />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+          <p class="options">Already have an account? <a href="/login">Login</a></p>
+        </form>
+      </section>
+</main>
+
+<%-include('./partials/footer.ejs')%>

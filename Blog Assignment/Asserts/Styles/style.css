@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: #666;
+    color: black;
+    text-align: center;
+}
+nav{
+    background: #facc15;
+    width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo a{
+    text-decoration: none;
+    color: #451a03;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+span{
+    
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+ul{
+    display: flex;
+}
+
+ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #451a03;
+    margin-right: 2rem;
+    font-weight: 800;
+}
+
+ul li a:hover{
+    color: red;
+}
+.allPost{
+display: grid;
+grid-template-columns: auto auto;
+padding: 2rem;
+gap: 1.5rem;
+}
+.eachPost{
+    margin-top: 2rem;
+    /* background: red; */
+    padding: 1rem;
+    border-radius: 1rem;
+    border: .3rem solid #facc15;
+}
+
+img{
+    width: 37rem;
+    height: 25rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    /* border: .3rem solid yellow; */
+}
+
+.description{
+    max-width: 100%;
+    margin: auto;
+    text-align: justify;
+    border-radius: 1rem;
+    /* border: .3rem solid yellow; */
+    margin-top: .5rem;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: 600;
+}
+p{
+    font-weight: 500;
+}
+.author, .Post .author{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: .5rem;
+    /* color: yellow; */
+    border-radius: 1rem;
+    /* border: .3rem solid yellow; */
+    padding: 1rem;
+}
+.avatar, .Post .avatar{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    border: .3rem solid #facc15;
+}
+.right{
+    display: flex;
+    gap: .5rem;
+}
+
+.others,
+.left{
+    margin-top: 1.5rem;
+    
+}
+
+
+.pub{
+    color: #fefce8;
+}
+h2{
+    text-transform: uppercase;
+    color: #fefce8;
+}
+
+.Post
+    {
+        background:#0891b2;
+        padding-bottom: 5rem;
+    }
+    
+    .Post img{
+        width: 55rem;
+        height: 35rem;
+        margin-top: .5rem;
+        border-radius: 1rem;
+        border: .3rem solid rgb(241, 14, 14);
+    }
+    
+    .Post .description{
+        max-width: 70%;
+        font-size: 1rem;
+        color: #fefce8;
+        font-weight: 300;
+    }
+    
+    .Post .author{
+        max-width: 50%;
+        margin:-1.5rem auto 0;
+    }
+
+    .Post h2{
+        margin-top: 2rem;
+    }
+
+    

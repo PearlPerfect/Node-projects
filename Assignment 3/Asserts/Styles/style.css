@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background: #666;
+    color: black;
+    text-align: center;
+}
+nav{
+    background: #facc15;
+    max-width: 100%;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.logo a{
+    text-decoration: none;
+    color: #451a03;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-shadow: 2px 2px 4px #000000;
+}
+span{
+    
+    text-transform: uppercase;
+    font-size: .7rem;
+    font-family: 'Dancing Script', cursive;
+}
+
+ul{
+    display: flex;
+}
+
+ul li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #451a03;
+    margin-right: 2rem;
+    font-weight: 800;
+}
+
+ul li a:hover{
+    color: red;
+}
+.allPost{
+display: grid;
+grid-template-columns: auto auto;
+padding: 2rem;
+gap: 1.5rem;
+place-content: center;
+border: .3rem solid #f7110d;
+}
+.form{
+   
+    max-width: 80%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin:2rem auto;
+    background: #facc15;
+    padding: 2rem;
+            /* text-align: center; */
+        
+    }
+    .btn{
+        text-align: center;
+    }
+
+    .updateBtn{
+        border: .3rem solid #facc15;
+       align-items: center;
+       cursor: pointer;
+    }
+    .label{
+        color: #f7110d;
+        font-size: 1.2rem;
+        font-weight: bold;
+        text-align: left;
+        
+    }
+    input{
+        width: 100%;
+        height: 3rem;
+        border: .2rem solid #f7110d;
+        outline: none;
+        border-radius: .3rem;
+        font-size: 1.2rem;
+        padding: 12px 36px 12px 12px ;
+    }
+    
+    textarea{
+        width: 100%;
+        border: .2rem solid #f7110d;
+        outline: none;
+        border-radius: .3rem;
+        font-size: 1.2rem;
+        padding: 12px 36px 12px 12px ;
+    }
+    
+    button{
+        border: .2rem solid #f7110d;
+        outline: none;
+        border-radius: .3rem;
+        color: #ace6ed;
+        background:#f7110d ;
+        padding: .5rem 1rem;
+        cursor: pointer;
+        text-align: center;
+        font-size: 1rem;
+        font-weight: bold;
+        text-transform: capitalize;
+        margin-top: 1rem;
+        
+    }
+    
+    button:hover{
+        background: transparent;
+        color: #f7110d;
+    }
+
+    .blogTitle{
+        text-align: center;
+    }
+ 
+    a{
+        color:black;;
+    }
+
+    #add{
+        color: #facc15;
+    }
+
+    .Update{
+        display: flex;
+        gap:5rem;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .updateBtn{
+        border: .3rem solid #facc15;
+       align-items: center;
+       cursor: pointer;
+    }
+    
+    img{
+        width: 25rem;
+        height: 25rem;
+        margin-top: 1rem;
+        border-radius: 1rem;
+        /* border: .3rem solid yellow; */
+    }
+

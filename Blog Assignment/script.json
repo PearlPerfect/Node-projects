@@ -1,0 +1,63 @@
+{
+    "count": 4,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 1,
+            "title": "Company Picnic Announcement",
+            "text": "We are excited to announce that our annual company picnic will be held on the first Saturday of next month. The picnic will take place at the beautiful Willow Park, and it promises to be a day filled with fun, games, and delicious food. We encourage all employees and their families to join us for this fantastic event. This year, we have organized a variety of activities for everyone to enjoy, including a tug-of-war competition, sack races, and a water balloon toss.",
+            "author": {
+                "username": "blairc",
+                "fullname": "Blair Calderon",
+                "avatar": "https://articletest.pythonanywhere.com/media/userfiles/avatar/03c30f6b3b75990075acadb11de9569f.png",
+                "is_verified": true
+            },
+            "image": "https://articletest.pythonanywhere.com/media/articles/ee399f2766f817c4442cbf13d32dce90.jpg",
+            "reaction": 2,
+            "created_at": "2023-07-23T20:29:07.020585Z"
+        },
+        {
+            "id": 2,
+            "title": "New Product Launch",
+            "text": "We are thrilled to announce the launch of our latest product, the TechX Pro. The TechX Pro is a revolutionary gadget that combines cutting-edge technology with sleek design. It boasts advanced features such as facial recognition, voice commands, and ultra-fast processing power. This product is the result of months of hard work and innovation by our talented team of engineers and designers. To celebrate the launch, we are offering a limited-time discount for early adopters.",
+            "author": {
+                "username": "cassius_d",
+                "fullname": "Cassius Duarte",
+                "avatar": "https://articletest.pythonanywhere.com/media/userfiles/avatar/bc08c1391140ddc48e98fed0224b1b26.png",
+                "is_verified": true
+            },
+            "image": "https://articletest.pythonanywhere.com/media/articles/4f5049104fa91cceacd9f542dc442d07.jpg",
+            "reaction": 2,
+            "created_at": "2023-07-24T08:03:04.668366Z"
+        },
+        {
+            "id": 3,
+            "title": "Employee of the Month Award",
+            "text": "We are proud to announce the recipient of this month's Employee of the Month award: John Smith from the Marketing Department. John has consistently demonstrated exceptional dedication, teamwork, and creativity in his work. He played a key role in the successful launch of our latest advertising campaign, which resulted in a significant increase in sales. Moreover, his positive attitude and willingness to go the extra mile have made him a valuable asset to our team.",
+            "author": {
+                "username": "cassius_d",
+                "fullname": "Cassius Duarte",
+                "avatar": "https://articletest.pythonanywhere.com/media/userfiles/avatar/bc08c1391140ddc48e98fed0224b1b26.png",
+                "is_verified": true
+            },
+            "image": "https://articletest.pythonanywhere.com/media/articles/31e38483ebb015741bf716bb2d08f21e.jpg",
+            "reaction": 1,
+            "created_at": "2023-07-24T08:05:15.778744Z"
+        },
+        {
+            "id": 4,
+            "title": "promise post",
+            "text": "try",
+            "author": {
+                "username": "adaline_m10293",
+                "fullname": "Adaline Moreno",
+                "avatar": null,
+                "is_verified": false
+            },
+            "image": null,
+            "reaction": 0,
+            "created_at": "2023-08-10T12:25:09.528548Z"
+        }
+    ]
+}

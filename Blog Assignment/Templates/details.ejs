@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="icon" type="image/x-icon" href="/public/Images/title Image.jpg">
+    <link rel="stylesheet" href="/public/Styles/style.css">
+</head>
+<body>
+    <div class="Post">
+    <nav>
+        <div class="logo">
+            <a href="#">Pearls<span>blog</span> </a>
+        </div>
+    
+        <ul>
+            <li><a href="/">HOME</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><a href="/">News</a></li>
+        </ul>
+    </nav>
+
+        <h1>WELCOME TO MY BLOG</h1>
+        <h2><%= title %></h2>
+        <img src="<%=image %>" alt="">
+        <p class="description"><%= text %></p>
+    
+    
+        <div class="author">
+            <div class="right">
+        <img src="<%= author.avatar %>" alt="avatar" class="avatar">
+        <div class="others">
+        <h4>Username: <Span class="pub"><%= author.username %></Span></h4>
+            <% var day = new Date(created_at)%>
+        <h4>Published On: <span class="pub"><%=day.toLocaleDateString() %></span></h4>
+        <h4>Published At: <span class="pub"><%=day.toLocaleTimeString() %></span></h4>
+            
+        </div>
+    </div>
+    
+    
+    
+        <div class="left">
+            <h4>Name: <span class="pub"> <%= author.fullname %></span></h4>
+            <h4>Likes: <span class="pub"> <%= reaction %> </span></h4>
+            <h4>Verification: <span class="pub"><%=author.is_verified %> </span></h4>
+        </div>
+    </div>
+    </div>
+        
+    
+</body>
+</html>

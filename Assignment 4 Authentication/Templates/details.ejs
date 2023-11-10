@@ -1,0 +1,27 @@
+<%-include('./partials/header.ejs') %>
+<body>
+    <%-include('./partials/nabvar.ejs') %>
+
+        <div class="post">
+        <h2><%= blogs.title %></h2>
+        <p class="description"><%= blogs.body %></p>
+        <img src="/pictures/<%=blogs.Image %>" alt="update">
+        
+        <div class="others">
+       
+            <% var day = new Date(blogs.updatedAt)%>
+        <h4>Published On: <span class="pub"><%=day.toLocaleDateString() %></span></h4>
+        <h4>Published At: <span class="pub"><%=day.toLocaleTimeString() %></span></h4>
+        </div>
+
+        <div class="Update">
+        <form action="/delete/<%=blogs._id%>" method="post" class="btn">
+            <input type="submit" value="Delete" class="updateBtn">
+        </form>
+        <form action="/edit/<%=blogs._id%>" method="get" class="btn">
+            <input type="submit" value="Update" class="updateBtn">
+        </form>
+    </div>
+</div>
+    
+    <%-include('./partials/footer.ejs') %>

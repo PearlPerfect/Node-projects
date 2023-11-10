@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    background: #134e4a;
+
+    /* color: #8bebf5; */
+}
+
+
+.form{
+    max-width: 80%;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    margin:2rem auto;
+    background: #99f6e4;
+    padding: 2rem;
+    /* text-align: center; */
+}
+
+.signUP{
+    margin: .5rem auto;
+}
+.form h1{
+    text-align: center;
+    color: #134e4a;
+}
+#input-form input[type="password"], 
+#input-form input[type="text"]{
+    width: 100%;
+    padding: 12px 36px 12px 12px ;
+}
+
+.password-container{
+    position: relative;
+}
+
+#showPassword{
+    position: absolute;
+    top: 2.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    color: #134e4a;
+    
+}
+
+#showPassword:hover{
+  color: red;
+}
+.form p{
+    text-align: center;
+    color: #134e4a;
+}
+
+form{
+    margin-top: 3rem;
+}
+
+label{
+    color: #134e4a;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+input{
+    width: 100%;
+    height: 3rem;
+    border: .2rem solid #134e4a;
+    outline: none;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    padding: 12px 36px 12px 12px ;
+}
+
+textarea{
+    width: 100%;
+    border: .2rem solid #134e4a;
+    outline: none;
+    border-radius: .3rem;
+    font-size: 1.2rem;
+    padding: 12px 36px 12px 12px ;
+}
+
+.left{
+    float: right;
+    margin-top: -1.5rem;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+
+button{
+    border: .2rem solid #134e4a;
+    outline: none;
+    border-radius: .3rem;
+    color: #8bebf5;
+    background:#134E4A ;
+    padding: .5rem 1rem;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    
+}
+
+button:hover{
+    background: transparent;
+    color: #134e4a;
+}
+
+a{
+    color: #3b0764;
+    font-weight: 1rem;
+    font-weight: bold;
+}
+
+em{
+    font-size: 1.3rem;
+}
+
+.error{
+    background: goldenrod;
+    font-style: italic;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    color: red;
+}
+
+.label{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.btn{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #99f6e4;
+}
+.btn:hover{
+    color: #f0f8ff;
+}
+.inputs{
+margin-bottom: 1.5rem;
+}
+
+
+@media screen and (max-width:400px){
+    .left{
+
+        margin-top: .3rem;
+    }
+    
+}
+
+
+/* dashbord */
+
+.allPost{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 2rem;
+    gap: 2rem;
+    color: #134e4a;
+}
+
+.allPost h1{
+    color: #134e4a;
+}
+.allPost p{
+    width: 95%;
+    margin: auto;
+    font-weight: 500;
+    color: #083344;
+    font-size: 1.2rem;
+}
+.eachPost{
+    background: #8bebf5;
+    padding: 1rem;
+}
+.aboutAuthor{
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.Author{
+    display: flex;
+    margin-top: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.right{
+    display: flex;
+    gap: 1rem;
+}
+
+img{
+    width: 100%;
+    height: 25rem;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+.avatar{
+    width: 7rem;
+    height: 7rem;
+    border-radius: 50%;
+    border: 3px solid #ff0000;
+}
+.Author .avatar{
+    border: 3px solid #d2691e;
+}
+.authorDetails, .left{
+    margin-top: 2rem;
+}
+.Author span{
+    color: #f0f8ff;
+}
+
+.Author h4,
+.Author h3{
+    color: #d2691e;
+}
+span{
+    color: red;
+}
+h1{
+    text-align: center;
+    color: #8bebf5;
+    text-transform: uppercase;
+}
+
+.post{
+    max-width: 80%;
+    padding: 2rem;
+    margin: auto;
+}
+
+img{
+    height: 35rem;
+}
+
+.description{
+    width: 95%;
+    color: #8bebf5;
+    margin: auto;
+    font-size: 1.3rem;
+    font-weight: 500;
+
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+#time{
+    float: right;
+    color: #8bebf5;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+}

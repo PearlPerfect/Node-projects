@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pages</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+    <div class="post">
+    <h1><%= title%></h1>
+ <img src="<%= image %>" alt="" id="pics">
+           <p class="description"><%= text%></p>
+
+           <div class="Author">
+            <div class="right">
+                <img src="<%= author.avatar %>" alt="" class="avatar"></a>
+                <div class="authorDetails">
+                <h3>Name: <span> <%= author.fullname%></span> </h3>
+                <h3>Username: <span> <%= author.username%></span> </h3>
+                <h3>Verification: <span> <%= author.is_verified%></span> </h3>
+            </div>
+            </div>
+            <div class="authorLeft">
+                <% const creationDate = new Date(created_at)%>
+                <h4>Post Made On: <span><%= creationDate.toLocaleDateString()%></span></h4>
+                <h4>Post Made At: <span><%= creationDate.toLocaleTimeString()%></span></h4>
+                <h4>Reaction: <span><%=reaction %></span></h4>
+            </div>
+           
+
+           </div>
+
+        </div>
+    </body>
+    </html>

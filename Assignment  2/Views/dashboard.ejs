@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+
+
+    <h1>Welcome <%= session?.Username %></h1>
+    
+    <div class="allPost">
+    <% result.forEach(item =>{ %>
+        <div class="eachPost">
+            <h1 class="title"><%= item.title%></h1>
+
+           <a href="/<%=item.id%>"> <img src="<%= item.image %>" alt=""></a>
+           <p><%= item.text%></p>
+
+           <div class="aboutAuthor">
+            <div class="right">
+                <img src="<%= item.author.avatar %>" alt="" class="avatar"></a>
+                <div class="authorDetails">
+                <h3>Name: <span> <%= item.author.fullname%></span> </h3>
+                <h3>Username: <span> <%= item.author.username%></span> </h3>
+                <h3>Verification: <span> <%= item.author.is_verified%></span> </h3>
+            </div>
+            </div>
+            <div class="left">
+                <% const creationDate = new Date(item.created_at)%>
+                <h4>Post Made On: <span><%= creationDate.toLocaleDateString()%></span></h4>
+                <h4>Post Made At: <span><%= creationDate.toLocaleTimeString()%></span></h4>
+                <h4>Reaction: <span><%=item.reaction %></span></h4>
+            </div>
+           
+
+           </div>
+        </div>
+
+    <%})%>
+
+
+</div>
+
+
+<h3 id="time"><%= session?.time %></h3>
+    </body>
+    </html>

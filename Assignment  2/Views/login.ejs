@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+<div class="form">
+    <h1>WELCOME</h1>
+    <p><em>...fill the form below to log in</em></p>
+
+    <form action="" method="POST" id="input-form">
+        <label for="UserName"> USERNAME:</label>
+        <input type="text" name="USERNAME" placeholder="Enter Your Username"  value="<%=data?.USERNAME %>">
+        <p class="error" style="color: red;"><%=err?.USERNAME %></p>
+
+        <div class="password-container">
+        <label for="Password"> PASSWORD:</label>
+        <input type="password" name="PASSWORD" placeholder="Enter Your Password" id="password"  value="<%=data?.PASSWORD %>">
+        <i class="fa-solid fa-eye" id="showPassword"></i>
+        <p class="error" style="color: red;"><%=err?.PASSWORD %></p>
+        <!-- onclick="showPassword()" -->
+    </div>
+        <button type="submit">LOG IN</button>
+    </form>
+
+    <div>
+        <p class="left">no account? <a href="/signup" > sign up</a></p>
+    </div>
+</div>  
+
+
+<script src="/public/script.js">
+</script>
+</body>
+</html>

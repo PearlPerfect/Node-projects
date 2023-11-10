@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/public/style.css">
+</head>
+<body>
+<div class="form signUP">
+    <h1>WELCOME</h1>
+    <p><em>...fill the form below to Sign Up</em></p>
+
+    <form action="" method="POST" id="input-form">
+        <label for="FullName"> FULLNAME:</label>
+        <input type="text" name="FULLNAME" placeholder="Enter Your name" value="<%= data?.FULLNAME%>">
+        <p class="error" style = "color: red;"><%= err?.FULLNAME %></p>
+
+        <label for="UserName"> USERNAME:</label>
+        <input type="text" name="USERNAME" placeholder="Choose Your Username" value="<%= data?.USERNAME%>">
+        <p class="error" style = "color: red;"><%= err?.USERNAME %></p>
+
+        <label for="Email"> EMAIL:</label>
+        <input type="email" name="EMAIL" placeholder="Enter Your Email" value="<%=data?.EMAIL%>">
+        <p class="error" style = "color: red;" ><%= err?.EMAIL %></p>
+
+        <div class="password-container">
+        <label for="Password"> PASSWORD:</label>
+        <input type="password" name="PASSWORD" placeholder="Enter Your Password" id="password" value="<%= data?.PASSWORD%>">
+       <div class="fa-solid fa-eye"  id="showPassword"></div>
+       <p class="error" style = "color: red;"><%= err?.PASSWORD  %></p>
+       
+      </div>
+
+
+
+        <button type="submit">Sign up</button>
+    </form>
+
+    <div>
+        <p class="left">Already have an account? <a href="/" > Log in</a></p>
+    </div>
+</div>  
+
+
+
+<script src="/public/script.js"></script>
+</body>
+</html>

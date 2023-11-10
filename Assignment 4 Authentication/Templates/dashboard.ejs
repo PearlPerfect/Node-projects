@@ -1,0 +1,13 @@
+<%-include('./partials/header.ejs') %>
+<body>
+   
+
+    <%-include('./partials/dashNav.ejs') %>
+    <% if (userName){ %>
+        <div class="flash">
+            <h2>Welcome <%= userName %></h2>
+        </div>
+    <% } %>
+
+
+    <%-include('./partials/footer.ejs')%>

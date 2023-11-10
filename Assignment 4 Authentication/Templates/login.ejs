@@ -1,0 +1,39 @@
+<%-include('./partials/header.ejs') %>
+<body>
+
+
+<main>
+    <section class="container">
+       
+        <form action="/login" class="form" method="post">
+            <h1>Login Form</h1>
+            <em>Fill the form to continue</em>
+            <% if (message.error){ %>
+              <div class="flashMsg">
+               <p> <%= message.error %> </p>
+              </div>
+          <% }  else if (message.success){ %>
+            <div class="flashSuc">
+             <p> <%= message.success %> </p>
+            </div>
+        <% } %>
+  
+          <div class="input-box">
+            <label>Email Address</label>
+                <p class="errors"><%= err %></p>
+            <input type="email" placeholder="Enter email address" name ="email" />
+          </div>
+
+          <div class="input-box">
+                <p class="errors"><%= err %></p>
+            <label>password</label>
+            <input type="password" placeholder="Enter password" name ="password" />
+          </div>
+          <button type="submit" class="btn">Submit</button>
+
+          <p class="options">No account? <a href="/register">Register</a></p>
+        </form>
+      </section>
+</main>
+
+<%-include('./partials/footer.ejs')%>
